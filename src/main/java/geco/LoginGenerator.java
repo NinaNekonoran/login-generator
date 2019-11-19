@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
  */
 public class LoginGenerator {
 
+    /** Variable **/
     private LoginService loginService;
 
     /**
