@@ -33,7 +33,6 @@ public class LoginServiceTest {
     @Test
     public void findAllLoginsStartingWith() {
         List<String> resultats = new ArrayList<>();
-        resultats.add("coucou");
         assertTrue(ls.findAllLoginsStartingWith("cou") instanceof List);
         assertEquals(resultats, ls.findAllLoginsStartingWith("cou"));
     }
