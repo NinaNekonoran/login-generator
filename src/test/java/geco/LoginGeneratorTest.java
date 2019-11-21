@@ -22,5 +22,11 @@ public class LoginGeneratorTest {
 
         assertEquals(lg.generateLoginForNomAndPrenom("Dùrand","Paul"), "PDUR1");
         assertTrue(loginService.loginExists("PDUR1"));
+
+        //CT : Quand on génère le login de "Paul Du", on vérifie que le login généré et ajouté à
+        //la liste des logins existants est "PDU".
+        assertEquals(lg.generateLoginForNomAndPrenom("Du","Paul"), "PDU");
+        System.out.println("----");
+        assertTrue(loginService.loginExists("PDU"));
     }
 }
