@@ -43,7 +43,6 @@ public class LoginGenerator {
         if (loginService.loginExists(login)) {
             loginAux = login;
             while(loginService.loginExists(loginAux)){
-                System.out.println("cououc");
                 loginAux = login + indice ;
                 indice++;
             }
